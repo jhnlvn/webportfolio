@@ -7,6 +7,11 @@
 	<title>Front-End Design Capstone</title>
 
 	<style type="text/css">
+
+		html {
+		  scroll-behavior: smooth;
+		}
+
 		.rgba {
 			background-color: black;
 			opacity: 75%;
@@ -34,6 +39,10 @@
 
 		.id-margin {
 			margin-top: -100px;
+		}
+
+		.link-color {
+			color: white;
 		}
 
 	</style>
@@ -72,33 +81,29 @@
 	  </div>
 	</nav>
 
-	<nav class="d-lg-none sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="d-lg-none sticky-top navbar navbar-dark bg-dark">
 	  <a class="btn navbar-brand" data-toggle="modal" data-target="#socialmedia">
 	  	<img src="images/loven.jpg" width="50" class="rounded-circle">
 	  </a>
 
-	  <!-- Hamburger Icon -->
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+
+	  <button type="button" class="btn btn-secondary dropdown-toggle bg-dark" data-toggle="dropdown" aria-expanded="false">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
-	  <!-- End of Hamburger Icon -->
 
-	  <div class="sticky-top collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav ml-auto">
-	      <li class="nav-item">
-	        <a class="nav-link" href="#about">About</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#projects">Projects</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#tools">Tools</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" data-toggle="modal" data-target="#staticBackdrop">Contact Me</a>
-	      </li>
-	    </ul>
-	  </div>
+	  <div class="border border-dark dropdown-menu dropdown-menu-right bg-dark px-1">
+	      <button class="border border-secondary my-1 dropdown-item" type="button">
+	        <a class="nav-link link-color" href="#about">About</a></button>
+	      <button class="border border-secondary my-1 dropdown-item btn-dark" type="button">
+	        <a class="nav-link link-color" href="#projects">Projects</a></button>
+	      <button class="border border-secondary my-1 dropdown-item btn-dark" type="button">
+	        <a class="nav-link link-color" href="#tools">Tools</a></button>
+	      <button class="border border-secondary my-1 dropdown-item btn-dark" type="button">
+	        <a class="nav-link link-color" data-toggle="modal" data-target="#staticBackdrop">Contact Me</a></button>
+	    </div>
+
+
 	</nav>
 	<!-- End of Navbar Section -->
 
@@ -364,7 +369,7 @@
 	<!-- End of Main Content Section -->
 
     <!-- Footer -->
-    <div class="text-center text-white bg-dark d-inline-block w-100 p-3">
+    <div class="text-center align-content-center text-white bg-dark d-inline-block w-100 p-3">
         <p>John Loven Manabat - Full-Stack Web Developer © All Rights Reserved 2023</p>
     </div>
     <!-- End of Footer -->
